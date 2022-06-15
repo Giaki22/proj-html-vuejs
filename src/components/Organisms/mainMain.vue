@@ -18,6 +18,9 @@
         <section class="takeout">
             <FifthTileVue></FifthTileVue>
         </section>
+        <section class="prices">
+            <SixthTileVue></SixthTileVue>
+        </section>
     </main>
 </template>
 
@@ -28,9 +31,11 @@ import ThirdTileVue from '../Components/thirdTile.vue';
 import MidPageBannerVue from '../Atoms/midPageBanner.vue';
 import FourthTileVue from '../Components/fourthTile.vue';
 import FifthTileVue from '../Components/fifthTile.vue';
+import SixthTileVue from '../Components/sixthTile.vue';
+
 export default {
     name: "mainMain",
-    components: { FirstTileVue, SecondTileVue, ThirdTileVue, MidPageBannerVue, FourthTileVue, FifthTileVue }
+    components: { FirstTileVue, SecondTileVue, ThirdTileVue, MidPageBannerVue, FourthTileVue, FifthTileVue, SixthTileVue }
 }
 </script>
 
@@ -38,7 +43,7 @@ export default {
 @import '../../assets/style/global-parts/_mixins.scss';
 
 main{
-    .food, .reviews, .news{
+    .food, .reviews, .news, .prices{
         @include containerM;
     }
     .menu, .banner, .takeout{
