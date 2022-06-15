@@ -12,6 +12,9 @@
         <section class="banner">
             <MidPageBannerVue></MidPageBannerVue>
         </section>
+        <section class="news">
+            <FourthTileVue></FourthTileVue>
+        </section>
     </main>
 </template>
 
@@ -20,9 +23,10 @@ import FirstTileVue from '../Components/firstTile.vue';
 import SecondTileVue from '../Components/secondTile.vue';
 import ThirdTileVue from '../Components/thirdTile.vue';
 import MidPageBannerVue from '../Atoms/midPageBanner.vue';
+import FourthTileVue from '../Components/fourthTile.vue';
 export default {
     name: "mainMain",
-    components: { FirstTileVue, SecondTileVue, ThirdTileVue, MidPageBannerVue }
+    components: { FirstTileVue, SecondTileVue, ThirdTileVue, MidPageBannerVue, FourthTileVue }
 }
 </script>
 
@@ -30,10 +34,10 @@ export default {
 @import '../../assets/style/global-parts/_mixins.scss';
 
 main{
-    .food, .reviews{
+    .food, .reviews, .news{
         @include containerM;
     }
-    .menu{
+    .menu, .banner{
         @include containerXL;
     }
 }
