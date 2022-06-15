@@ -21,6 +21,9 @@
         <section class="prices">
             <SixthTileVue></SixthTileVue>
         </section>
+        <section class="banner">
+            <PreFooterBannerVue></PreFooterBannerVue>
+        </section>
     </main>
 </template>
 
@@ -32,10 +35,11 @@ import MidPageBannerVue from '../Atoms/midPageBanner.vue';
 import FourthTileVue from '../Components/fourthTile.vue';
 import FifthTileVue from '../Components/fifthTile.vue';
 import SixthTileVue from '../Components/sixthTile.vue';
+import PreFooterBannerVue from '../Components/preFooterBanner.vue';
 
 export default {
     name: "mainMain",
-    components: { FirstTileVue, SecondTileVue, ThirdTileVue, MidPageBannerVue, FourthTileVue, FifthTileVue, SixthTileVue }
+    components: { FirstTileVue, SecondTileVue, ThirdTileVue, MidPageBannerVue, FourthTileVue, FifthTileVue, SixthTileVue, PreFooterBannerVue }
 }
 </script>
 
