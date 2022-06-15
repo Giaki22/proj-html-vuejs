@@ -9,6 +9,8 @@
             </div>
             <div class="pic">
                 <img src="../../../public/img/info22x.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="pop-up">California Rolls - $22</div>
             </div>
         </div>
         <div class="bottom">
@@ -81,6 +83,33 @@ main{
         .pic{
             @include containerS;
             padding: 0%;
+            position: relative;
+            text-align: center;
+            &:hover{
+                .pop-up{
+                    bottom: 20px;
+                }
+            }
+            .overlay{
+                position: absolute;
+                background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(212,219,219,0) 20%);
+                width: 100%;
+                height: 100%;
+                bottom: 0;
+                left: 0;
+            }
+            .pop-up{
+                @include subTitle($secondary);
+                width: 100%;
+                background: transparent;
+                font-size: 1rem;
+                letter-spacing: 1px;
+                position: absolute;
+                bottom: -15px;
+                left: 50%;
+                transform: translate(-50%);
+                transition: bottom .5s ease-in-out;
+            }
             img{
                 width: 100%;
             }
