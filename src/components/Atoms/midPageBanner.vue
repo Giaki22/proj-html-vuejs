@@ -46,7 +46,7 @@ main{
             font-size: 1rem;
             letter-spacing: 1px;
             position: absolute;
-            bottom: -15px;
+            bottom: -20px;
             transition: bottom .5s ease-in-out;
         }
     }

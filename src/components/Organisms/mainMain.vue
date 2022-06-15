@@ -15,6 +15,9 @@
         <section class="news">
             <FourthTileVue></FourthTileVue>
         </section>
+        <section class="takeout">
+            <FifthTileVue></FifthTileVue>
+        </section>
     </main>
 </template>
 
@@ -24,9 +27,10 @@ import SecondTileVue from '../Components/secondTile.vue';
 import ThirdTileVue from '../Components/thirdTile.vue';
 import MidPageBannerVue from '../Atoms/midPageBanner.vue';
 import FourthTileVue from '../Components/fourthTile.vue';
+import FifthTileVue from '../Components/fifthTile.vue';
 export default {
     name: "mainMain",
-    components: { FirstTileVue, SecondTileVue, ThirdTileVue, MidPageBannerVue, FourthTileVue }
+    components: { FirstTileVue, SecondTileVue, ThirdTileVue, MidPageBannerVue, FourthTileVue, FifthTileVue }
 }
 </script>
 
@@ -37,7 +41,7 @@ main{
     .food, .reviews, .news{
         @include containerM;
     }
-    .menu, .banner{
+    .menu, .banner, .takeout{
         @include containerXL;
     }
 }

@@ -64,6 +64,7 @@ main{
         display: flex;
         .left{
             width: 50%;
+            display: flex;
             img{
                 width: 100%;
             }
