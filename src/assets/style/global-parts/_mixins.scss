@@ -27,8 +27,11 @@ $secondary: #FFFFFF;
 }
 @mixin sectionTitle($color) {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem;
+    font-size: 2rem;
     color: $color;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 50px;
 }
 @mixin navbarItem($color) {
     font-size: .9rem;
@@ -75,7 +78,7 @@ $secondary: #FFFFFF;
     background-color: $backgroundColor;
     border: 1px solid $textColor;
     text-transform: uppercase;
-    padding: 5px;
+    padding: 10px 5px;
     letter-spacing: 1px;
     transition: color .5s, background-color .5s;
     &:hover{

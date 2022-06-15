@@ -6,15 +6,19 @@
         <section class="menu">
             <SecondTileVue></SecondTileVue>
         </section>
+        <section class="reviews">
+            <ThirdTileVue></ThirdTileVue>
+        </section>
     </main>
 </template>
 
 <script>
 import FirstTileVue from '../Components/firstTile.vue';
 import SecondTileVue from '../Components/secondTile.vue';
+import ThirdTileVue from '../Components/thirdTile.vue';
 export default {
     name: "mainMain",
-    components: { FirstTileVue, SecondTileVue }
+    components: { FirstTileVue, SecondTileVue, ThirdTileVue }
 }
 </script>
 
@@ -22,7 +26,7 @@ export default {
 @import '../../assets/style/global-parts/_mixins.scss';
 
 main{
-    .food{
+    .food, .reviews{
         @include containerM;
     }
     .menu{
