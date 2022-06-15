@@ -9,6 +9,9 @@
         <section class="reviews">
             <ThirdTileVue></ThirdTileVue>
         </section>
+        <section class="banner">
+            <MidPageBannerVue></MidPageBannerVue>
+        </section>
     </main>
 </template>
 
@@ -16,9 +19,10 @@
 import FirstTileVue from '../Components/firstTile.vue';
 import SecondTileVue from '../Components/secondTile.vue';
 import ThirdTileVue from '../Components/thirdTile.vue';
+import MidPageBannerVue from '../Atoms/midPageBanner.vue';
 export default {
     name: "mainMain",
-    components: { FirstTileVue, SecondTileVue, ThirdTileVue }
+    components: { FirstTileVue, SecondTileVue, ThirdTileVue, MidPageBannerVue }
 }
 </script>
 
