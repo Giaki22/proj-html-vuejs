@@ -32,7 +32,7 @@ $secondary: #FFFFFF;
     font-size: .9rem;
     font-family: 'Charis SIL', serif;
     color: $color;
-    opacity: 70%;
+    opacity: 75%;
     transition: opacity .2s;
     &:hover{
         opacity: 100%;
@@ -42,22 +42,27 @@ $secondary: #FFFFFF;
 /* CONTAINERS */
 @mixin containerXL {
     width: 100%;
+    padding: 30px 0px;
 }
 @mixin containerL {
     width: 90%;
     margin: auto;
+    padding: 30px 0px;
 }
 @mixin containerM {
     width: 70%;
     margin: auto;
+    padding: 30px 0px;
 }
 @mixin containerM {
     width: 50%;
     margin: auto;
+    padding: 30px 0px;
 }
 @mixin containerS {
     width: calc(100% / 3);
     margin: auto;
+    padding: 30px 0px;
 }
 /* BUTTONS */
 @mixin button($textColor, $backgroundColor) {

@@ -50,7 +50,6 @@ header{
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
-        padding: 30px 0px;
     }
     .content{
         @include containerS;
