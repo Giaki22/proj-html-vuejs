@@ -52,7 +52,7 @@ header{
         align-items: center;
     }
     .content{
-        @include containerS;
+        @include containerXS;
         padding: 50px 0;
         margin: 0 5%;
         display: flex;

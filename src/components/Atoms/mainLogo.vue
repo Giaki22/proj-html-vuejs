@@ -1,5 +1,5 @@
 <template>
-    <img src="../../../public/img/avada-restaurant-logo-new-2x.png" alt="">
+    <img src="../../../public/img/logo-restaurant-2x-600x115.png" alt="">
 </template>
 
 <script>
@@ -10,6 +10,6 @@ export default {
 
 <style scoped>
 img{
-    width: 15%;
+    width: 20%;
 }
 </style>

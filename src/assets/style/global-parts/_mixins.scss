@@ -17,11 +17,13 @@ $secondary: #FFFFFF;
     text-transform: uppercase;
     font-size: 2.5rem;
     color: $color;
+    letter-spacing: -0.125rem;
 }
 @mixin caption($color) {
     font-family: 'Charis SIL', serif;
     font-size: .75rem;
     color: $color;
+    line-height: 1.2rem;
 }
 @mixin sectionTitle($color) {
     font-family: 'Cormorant Garamond', serif;
@@ -46,22 +48,22 @@ $secondary: #FFFFFF;
 }
 @mixin containerL {
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
     padding: 30px 0px;
 }
 @mixin containerM {
     width: 70%;
-    margin: auto;
-    padding: 30px 0px;
-}
-@mixin containerM {
-    width: 50%;
-    margin: auto;
+    margin: 0 auto;
     padding: 30px 0px;
 }
 @mixin containerS {
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px 0px;
+}
+@mixin containerXS {
     width: calc(100% / 3);
-    margin: auto;
+    margin: 0 auto;
     padding: 30px 0px;
 }
 /* BUTTONS */
