@@ -25,6 +25,9 @@ main{
     .food{
         @include containerM;
     }
+    .menu{
+        @include containerXL;
+    }
 }
 
 </style>
