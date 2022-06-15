@@ -23,6 +23,8 @@ name: 'preFooterBanner'
 @import '../../../src/assets/style/global-parts/mixins';
 
 main{
+    display: flex;
+    padding: 0;
     position: relative;
     img{
        width: 100%;

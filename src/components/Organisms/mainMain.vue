@@ -21,7 +21,7 @@
         <section class="prices">
             <SixthTileVue></SixthTileVue>
         </section>
-        <section class="banner">
+        <section class="bannerbottom">
             <PreFooterBannerVue></PreFooterBannerVue>
         </section>
     </main>
@@ -50,8 +50,12 @@ main{
     .food, .reviews, .news, .prices{
         @include containerM;
     }
-    .menu, .banner, .takeout{
+    .menu, .banner, .takeout, .bannerbottom{
         @include containerXL;
+    }
+    .bannerbottom{
+        padding: 0;
+        margin-top: 30px;
     }
 }
 
