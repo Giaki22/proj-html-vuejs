@@ -26,7 +26,7 @@ name: 'titleHeader'
 main{
     .content{
         @include containerXS;
-        padding: 50px 0;
+        padding: 3.125rem 0;
         margin: 0 5%;
         display: flex;
         flex-flow: row nowrap;
@@ -34,18 +34,18 @@ main{
         .decoration{
             @include title($secondary);
             font-size: 1rem;
-            margin: 0 10px;
+            margin: 0 .625rem;
         }
         .text{
-            margin-top: 3px;
+            margin-top: .1875rem;
             display: flex;
             flex-flow: column nowrap;
-            gap: 50px;
+            gap: 3.125rem;
             small{
                 @include subTitle($secondary);
-                font-size: 10px;
+                font-size: .625rem;
                 font-weight: 400;
-                letter-spacing: 2px;
+                letter-spacing: .125rem;
             }
             h1{
                 @include title($secondary);

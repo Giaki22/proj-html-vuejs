@@ -54,14 +54,14 @@ main{
     display: flex;
     flex-flow: column nowrap;
     .top{
-        margin-top: 50px;
+        margin-top: 3.125rem;
         display: flex;
         flex-flow: row wrap;
         .text{
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
-            gap: 10px;
+            gap: .625rem;
             @include containerS;
             p{
                 @include containerM;
@@ -74,7 +74,7 @@ main{
             }
             h2{
                 @include containerM;
-                padding: 10px 0;
+                padding: .625rem 0;
                 margin: 0;
                 @include subTitle($primary);
             }
@@ -89,7 +89,7 @@ main{
             text-align: center;
             &:hover{
                 .pop-up{
-                    bottom: 20px;
+                    bottom: 1.25rem;
                 }
             }
             .overlay{
@@ -104,10 +104,10 @@ main{
                 @include subTitle($secondary);
                 width: 100%;
                 background: transparent;
-                font-size: 1rem;
-                letter-spacing: 1px;
+                font-size: 16px;
+                letter-spacing: .0625rem;
                 position: absolute;
-                bottom: -15px;
+                bottom: -0.9375rem;
                 left: 50%;
                 transform: translate(-50%);
                 transition: bottom .5s ease-in-out;
@@ -118,22 +118,22 @@ main{
         }
     }
     .bottom{
-        margin: 50px 0;
+        margin: 3.125rem 0;
         display: flex;
-        gap: 20px;
+        gap: 1.25rem;
         .table, .groups, .products{
             @include containerXS;
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
             justify-content: center;
-            gap: 20px;
+            gap: 1.25rem;
             img{
                 width: 30%;
             }
             h3{
                 @include title($primary);
-                font-size: 1rem;
+                font-size: 16px;
             }
             hr{
                 width: 30%;

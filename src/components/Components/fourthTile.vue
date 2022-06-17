@@ -29,7 +29,7 @@ export default {
 main{
     .cards{
         display: flex;
-        gap: 20px;
+        gap: 1.25rem;
     }
     h2{
         @include sectionTitle($primary)

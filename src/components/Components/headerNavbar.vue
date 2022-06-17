@@ -33,6 +33,10 @@ nav{
             @include navbarItem(white);
             text-decoration: none;
         }
+        i{
+            color: ($secondary);
+            font-size: .9rem;
+        }
     }
 }
 </style>

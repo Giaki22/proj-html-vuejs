@@ -55,7 +55,7 @@ main{
     }
     #bannerbottom{
         padding: 0;
-        margin-top: 30px;
+        margin-top: 1.875rem;
     }
 }
 

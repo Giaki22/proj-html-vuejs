@@ -23,7 +23,7 @@ main{
     width: 100%;
     display: flex;
     flex-flow: column;
-    gap: 30px;
+    gap: 1.875rem;
     align-items: center;
     justify-content: center;
     @include containerXS;

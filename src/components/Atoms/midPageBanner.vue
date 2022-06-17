@@ -24,7 +24,7 @@ main{
         width: 100%;
         &:hover{
             .pop-up{
-                bottom: 20px;
+                bottom: 1.25rem;
             }
         }
         img{
@@ -43,10 +43,10 @@ main{
             @include subTitle($secondary);
             width: 100%;
             background: transparent;
-            font-size: 1rem;
-            letter-spacing: 1px;
+            font-size: 16px;
+            letter-spacing: .0625rem;
             position: absolute;
-            bottom: -20px;
+            bottom: -1.25rem;
             transition: bottom .5s ease-in-out;
         }
     }

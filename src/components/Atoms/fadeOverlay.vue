@@ -10,7 +10,7 @@ name: 'fadeOverlay'
 
 <style scoped>
 .overlay{
-    margin-top: 30px;
+    margin-top: 1.875rem;
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(212,219,219,0) 100%);

@@ -39,16 +39,16 @@ main{
         transform: translate(0, -50%);
         @include containerXS;
         background-color: $primary;
-        margin-top: 3px;
+        margin-top: .1875rem;
         display: flex;
         flex-flow: column nowrap;
-        gap: 50px;
-        padding: 50px;
+        gap: 3.125rem;
+        padding: 3.125rem;
         small{
             @include subTitle($secondary);
-            font-size: 10px;
+            font-size: .625rem;
             font-weight: 400;
-            letter-spacing: 2px;
+            letter-spacing: .125rem;
         }
         hr{
             width: 20%;

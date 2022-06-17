@@ -48,26 +48,26 @@ export default {
 <style scoped lang="scss">
 @import '../../../src/assets/style/global-parts/mixins';
 main{
-    margin-top: 30px;
+    margin-top: 1.875rem;
     h5{
         z-index: 2;
     }
     h4{
         @include title($primary);
         font-size: 1.5rem;
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
     }
     display: flex;
     .left, .middle, .right{
         @include containerXS;
-        padding: 40px 30px;
+        padding: 2.5rem 1.875rem;
     }
     .left, .right{
         background-color: #e8e8e8;
     }
     .middle{
         position: relative;
-        top: -30px;
+        top: -1.875rem;
         left: 0;
         background-image: url(../../../public/img/misc22x.jpg);
         background-size: cover;
@@ -90,7 +90,7 @@ main{
         list-style: none;
         display: flex;
         flex-flow: column nowrap;
-        gap: 30px;
+        gap: 1.875rem;
     }
 }
 </style>

@@ -13,8 +13,8 @@ name: 'fiveStars'
 <style scoped>
 main{
     display: flex;
-    gap: 5px;
+    gap: .3125rem;
     color: white;
-    font-size: .8rem;
+    font-size: 12.8px;
 }
 </style>

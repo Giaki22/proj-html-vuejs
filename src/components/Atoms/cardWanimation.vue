@@ -29,7 +29,7 @@ export default {
 .card{
     display: flex;
     flex-flow: column nowrap;
-    gap: 20px;
+    gap: 1.25rem;
     position: relative;
     .overlay{
         position: absolute;
@@ -72,8 +72,8 @@ export default {
         }
         h4{
             @include subTitle($primary);
-            font-size: 1rem;
-            letter-spacing: 0px;
+            font-size: 16px;
+            letter-spacing: 0rem;
         }
         span{
             @include caption($primary);

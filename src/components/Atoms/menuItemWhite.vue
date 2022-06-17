@@ -29,14 +29,14 @@ main{
     .top{
         display: flex;
         justify-content: space-between;
-        margin-bottom: 10px;
+        margin-bottom: .625rem;
         h5, h6{
             @include title($secondary);
-            font-size: .8rem;
+            font-size: 12.8px;
         }
         span{
             @include caption($secondary);
-            font-size: .5rem;
+            font-size: 8px;
         }
     }
 }

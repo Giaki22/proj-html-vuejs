@@ -74,14 +74,14 @@ main{
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
-            gap: 20px;
+            gap: 1.25rem;
             span{
                 color: $secondary;
             }
             h3{
                 @include title($secondary);
                 font-size: 1.5rem;
-                letter-spacing: -1px;
+                letter-spacing: -0.0625rem;
             }
             hr{
                 width: 10%;
@@ -98,7 +98,7 @@ main{
     }
     .bottom{
         display: flex;
-        gap: 50px;
+        gap: 3.125rem;
         .theguardian, .globenmail{
             position: relative;
             @include containerS;
@@ -114,7 +114,7 @@ main{
                 display: flex;
                 flex-flow: column nowrap;
                 justify-content: center;
-                gap: 20px;
+                gap: 1.25rem;
                 span{
                     color: $secondary;
                     text-transform: uppercase;
@@ -123,7 +123,7 @@ main{
                 h3{
                     @include title($secondary);
                     font-size: 1.5rem;
-                    letter-spacing: -1px;
+                    letter-spacing: -0.0625rem;
                 }
                 hr{
                     width: 10%;

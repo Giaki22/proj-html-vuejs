@@ -34,7 +34,7 @@ footer{
         }
     .top{
         @include containerXL;
-        padding: 100px 0;
+        padding: 6.25rem 0;
         background-image: url(../../../public/img/slider52x.jpg);
         background-size: cover;
         background-position: bottom;
@@ -44,9 +44,9 @@ footer{
         align-items: center;
         justify-content: center;
         background-color: #030303;
-        height: 30px;
+        height: 1.875rem;
         @include caption($secondary);
-        padding: 30px 0;
+        padding: 1.875rem 0;
     }
 }
 

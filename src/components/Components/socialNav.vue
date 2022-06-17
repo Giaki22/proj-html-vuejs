@@ -18,10 +18,10 @@ export default {
 nav{
     display: flex;
     flex-flow: row nowrap;
-    gap: 10px;
+    gap: .625rem;
     img{
-        width: 30px;
-        height: 30px;
+        width: 1.875rem;
+        height: 1.875rem;
     }
     img:hover{
         cursor: pointer;
