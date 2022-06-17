@@ -8,7 +8,7 @@
                 <img src="../../../public/img/signature.jpg" alt="">
             </div>
             <div class="pic">
-                <div class="pic">
+                <div class="picontent">
                     <img src="../../../public/img/info22x.jpg" alt="">
                     <div class="overlay"></div>
                     <div class="pop-up">California Rolls - $22</div>
@@ -54,14 +54,14 @@ main{
     display: flex;
     flex-flow: column nowrap;
     .top{
-        margin-top: 3.125rem;
+        margin-top: 50px;
         display: flex;
         flex-flow: row wrap;
         .text{
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
-            gap: .625rem;
+            gap: 10px;
             @include containerS;
             p{
                 @include containerM;
@@ -74,7 +74,7 @@ main{
             }
             h2{
                 @include containerM;
-                padding: .625rem 0;
+                padding: 10px 0;
                 margin: 0;
                 @include subTitle($primary);
             }
@@ -89,7 +89,7 @@ main{
             text-align: center;
             &:hover{
                 .pop-up{
-                    bottom: 1.25rem;
+                    bottom: 20px;
                 }
             }
             .overlay{
@@ -104,36 +104,39 @@ main{
                 @include subTitle($secondary);
                 width: 100%;
                 background: transparent;
-                font-size: 16px;
-                letter-spacing: .0625rem;
+                font-size: 1rem;
+                letter-spacing: 1px;
                 position: absolute;
-                bottom: -0.9375rem;
+                bottom: -15px;
                 left: 50%;
                 transform: translate(-50%);
                 transition: bottom .5s ease-in-out;
             }
-            img{
+            img, .picontent{
                 width: 100%;
+            }
+            .picontent{
+                position: relative;
             }
         }
     }
     .bottom{
-        margin: 3.125rem 0;
+        margin: 50px 0;
         display: flex;
-        gap: 1.25rem;
+        gap: 20px;
         .table, .groups, .products{
             @include containerXS;
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
             justify-content: center;
-            gap: 1.25rem;
+            gap: 20px;
             img{
                 width: 30%;
             }
             h3{
                 @include title($primary);
-                font-size: 16px;
+                font-size: 1rem;
             }
             hr{
                 width: 30%;
