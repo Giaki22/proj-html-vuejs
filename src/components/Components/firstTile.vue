@@ -8,9 +8,11 @@
                 <img src="../../../public/img/signature.jpg" alt="">
             </div>
             <div class="pic">
-                <img src="../../../public/img/info22x.jpg" alt="">
-                <div class="overlay"></div>
-                <div class="pop-up">California Rolls - $22</div>
+                <div class="pic">
+                    <img src="../../../public/img/info22x.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="pop-up">California Rolls - $22</div>
+                </div>
             </div>
         </div>
         <div class="bottom">
