@@ -1,27 +1,27 @@
 <template>
     <main>
-        <section class="food">
+        <section id="food">
             <FirstTileVue></FirstTileVue>
         </section>
-        <section class="menu">
+        <section id="menu">
             <SecondTileVue></SecondTileVue>
         </section>
-        <section class="reviews">
+        <section id="reviews">
             <ThirdTileVue></ThirdTileVue>
         </section>
-        <section class="banner">
+        <section id="banner">
             <MidPageBannerVue></MidPageBannerVue>
         </section>
-        <section class="news">
+        <section id="news">
             <FourthTileVue></FourthTileVue>
         </section>
-        <section class="takeout">
+        <section id="takeout">
             <FifthTileVue></FifthTileVue>
         </section>
-        <section class="prices">
+        <section id="prices">
             <SixthTileVue></SixthTileVue>
         </section>
-        <section class="bannerbottom">
+        <section id="bannerbottom">
             <PreFooterBannerVue></PreFooterBannerVue>
         </section>
     </main>
@@ -47,13 +47,13 @@ export default {
 @import '../../assets/style/global-parts/_mixins.scss';
 
 main{
-    .food, .reviews, .news, .prices{
+    #food, #reviews, #news, #prices{
         @include containerM;
     }
-    .menu, .banner, .takeout, .bannerbottom{
+    #menu, #banner, #takeout, #bannerbottom{
         @include containerXL;
     }
-    .bannerbottom{
+    #bannerbottom{
         padding: 0;
         margin-top: 30px;
     }

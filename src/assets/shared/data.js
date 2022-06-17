@@ -2,6 +2,36 @@ import Vue from 'vue';
 
 export default Vue.observable({
     navbarVoices: ['Home', 'Culinary History', 'Our Team', 'Our Menu', 'Takeout', 'Bulletin', 'Reservations'],
+    navbarVoicesPlusIDS: [
+        {
+            title: 'Home',
+            id:'info',
+        },
+        {
+            title: 'Culinary History',
+            id:'food',
+        },
+        {
+            title: 'Our Team',
+            id:'reviews',
+        },
+        {
+            title: 'Our Menu',
+            id:'prices',
+        },
+        {
+            title: 'Takeout',
+            id:'takeout',
+        },
+        {
+            title: 'Bulletin',
+            id:'reviews',
+        },
+        {
+            title: 'Reservations',
+            id:'bannerbottom',
+        },
+    ],
     plates: [
         {
             title: "Ahi Salmon Nigiri",

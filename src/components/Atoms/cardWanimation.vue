@@ -1,58 +1,83 @@
 <template>
-    <main>
+    <main class="card">
         <img :src="img" alt="">
+        <FadeOverlay></FadeOverlay>
         <div class="text">
             <i class="fa-solid fa-link"></i>
             <h4>{{title}}</h4>
-            <span>By admin | Januray 7th, 2020 | Categories: News</span>
+            <span class="hidden">By admin | Januray 7th, 2020 | Categories:</span>
+            <span>News</span>
         </div>
     </main>
 </template>
 
 <script>
+import FadeOverlay from './fadeOverlay.vue';
 export default {
-name: 'carWanimation',
-props: {
-    img: String,
-    title: String
-}
+    name: "carWanimation",
+    props: {
+        img: String,
+        title: String
+    },
+    components: { FadeOverlay }
 }
 </script>
 
 <style scoped lang="scss">
 @import '../../../src/assets/style/global-parts/mixins';
 
-main{
-        display: flex;
-        flex-flow: column nowrap;
-        gap: 20px;
-        position: relative;
-        img{
-            width: 100%;
-            position: relative;
-            &:hover{
-            .text{
-                position: absolute;
-                
-            }
-            img{
-                height: 100px;
-            }
+.card{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    position: relative;
+    .overlay{
+        position: absolute;
+        top: -2%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+        opacity: 0;
+        transition: opacity .2s ease-in-out;
+    }
+    &:hover{
+        cursor: pointer;
+        .overlay{
+            opacity: 100%;
         }
+        img{
+            transform: scaleY(130%) translateY(10%);
         }
         .text{
-            text-align: center;
-            i{
-                color: white;
+            transform: translate(0, -300%);
+            h4, span{
+                color: ($secondary);
             }
-            h4{
-                @include subTitle($primary);
-                font-size: 1rem;
-                letter-spacing: 0px;
-            }
-            span{
-                @include caption($primary);
+            .hidden{
+                display: none;
             }
         }
     }
+    img{
+        width: 100%;
+        position: relative;
+        transition: all .5s ease-out;
+    }
+    .text{
+        text-align: center;
+        transition: all .5s ease-out;
+        i{
+            color: white;
+        }
+        h4{
+            @include subTitle($primary);
+            font-size: 1rem;
+            letter-spacing: 0px;
+        }
+        span{
+            @include caption($primary);
+        }
+    }
+}
 </style>

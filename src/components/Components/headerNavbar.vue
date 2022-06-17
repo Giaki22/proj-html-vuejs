@@ -1,7 +1,7 @@
 <template>
     <nav>
         <ul>
-            <li v-for="(link, i) in data.navbarVoices" :key="i">{{link}}</li>
+            <a :href="`#${link.id}`" v-for="(link, i) in data.navbarVoicesPlusIDS" :key="i">{{link.title}}</a>
             <li><i class="fa-solid fa-cart-shopping"></i></li>
         </ul>
     </nav>
@@ -29,8 +29,9 @@ nav{
         display: flex;
         flex-flow: row nowrap;
         gap: 1.875rem;
-        li{
+        a{
             @include navbarItem(white);
+            text-decoration: none;
         }
     }
 }

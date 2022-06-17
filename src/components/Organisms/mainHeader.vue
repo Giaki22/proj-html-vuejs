@@ -1,6 +1,6 @@
 <template>
     <header>
-        <div class="info">
+        <div id="info">
             <mainLogo></mainLogo>
             <HeaderNavbar></HeaderNavbar>
         </div>
@@ -36,7 +36,7 @@ header{
     object-fit: cover;
     // min-height: 650px;
     //Elements
-    .info{
+    #info{
         @include containerL;
         display: flex;
         flex-flow: row nowrap;

@@ -25,6 +25,7 @@ footer{
     position: relative;
     .overlay{
             position: absolute;
+            z-index: 1;
             top: 0;
             left: 0;
             width: 100%;
@@ -32,7 +33,6 @@ footer{
             background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(212,219,219,0) 100%);
         }
     .top{
-        z-index: 2;
         @include containerXL;
         padding: 100px 0;
         background-image: url(../../../public/img/slider52x.jpg);

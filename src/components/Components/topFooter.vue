@@ -18,6 +18,8 @@ export default {
 @import '../../assets/style/global-parts/_mixins.scss';
 
 main{
+    position: relative;
+    z-index: 2;
     width: 100%;
     display: flex;
     flex-flow: column;

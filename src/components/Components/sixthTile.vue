@@ -49,6 +49,9 @@ export default {
 @import '../../../src/assets/style/global-parts/mixins';
 main{
     margin-top: 30px;
+    h5{
+        z-index: 2;
+    }
     h4{
         @include title($primary);
         font-size: 1.5rem;
@@ -80,6 +83,7 @@ main{
         h4, h5, ul, li{
             color: ($secondary);
             z-index: 2;
+            position: relative;
         }
     }
     ul{

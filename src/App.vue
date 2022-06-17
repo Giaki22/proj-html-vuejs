@@ -23,4 +23,7 @@ export default {
 
 <style lang="scss">
 @import './assets/style/global.scss';
+html{
+  scroll-behavior: smooth;
+}
 </style>
