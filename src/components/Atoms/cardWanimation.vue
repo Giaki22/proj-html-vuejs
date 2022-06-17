@@ -47,7 +47,7 @@ export default {
             opacity: 100%;
         }
         img{
-            transform: scaleY(130%) translateY(10%);
+            transform: scaleY(115%) translateY(5%);
         }
         .text{
             transform: translate(0, -300%);
